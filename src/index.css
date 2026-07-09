@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-gray-800 bg-gray-50 font-sans;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-300 shadow-md hover:shadow-lg focus:ring-4 focus:ring-primary-100;
+  }
+  .btn-secondary {
+    @apply px-6 py-3 bg-white text-primary-700 border border-primary-200 rounded-lg font-semibold hover:bg-primary-50 transition-colors duration-300 shadow-sm hover:shadow;
+  }
+}
