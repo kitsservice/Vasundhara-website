@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function HeroSection() {
   return (
     <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-gradient-to-br from-primary-50 to-white">
@@ -35,9 +37,9 @@ export default function HeroSection() {
               <a href="#features" className="btn-secondary flex justify-center items-center">
                 Explore Features
               </a>
-              <a href="/contact" className="btn-secondary flex justify-center items-center !bg-transparent !border-gray-300 !text-gray-700 hover:!bg-gray-50">
+              <Link to="/contact" className="btn-secondary flex justify-center items-center !bg-transparent !border-gray-300 !text-gray-700 hover:!bg-gray-50">
                 Contact Support
-              </a>
+              </Link>
             </div>
           </div>
 

@@ -4,7 +4,7 @@ import FeaturesSection from '../components/FeaturesSection';
 import CertificatesSection from '../components/CertificatesSection';
 import ImpactSection from '../components/ImpactSection';
 import ScreenshotsSection from '../components/ScreenshotsSection';
-import { ArrowRight, Download, UserCheck, ImagePlus, MapPin, Award } from 'lucide-react';
+import { Download, UserCheck, ImagePlus, MapPin, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Home() {

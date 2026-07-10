@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function PrivacyPolicy() {
   const currentDate = new Date().toLocaleDateString('en-US', {
     year: 'numeric',
@@ -93,7 +95,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Account and Data Deletion</h2>
             <p>
-              Users have the right to request the deletion of their accounts and associated data. Please refer to our <a href="/delete-account" className="text-primary-600 hover:underline">Account Deletion Request page</a> for step-by-step instructions.
+              Users have the right to request the deletion of their accounts and associated data. Please refer to our <Link to="/delete-account" className="text-primary-600 hover:underline">Account Deletion Request page</Link> for step-by-step instructions.
             </p>
           </section>
 
@@ -110,3 +112,4 @@ export default function PrivacyPolicy() {
     </div>
   );
 }
+

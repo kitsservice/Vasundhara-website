@@ -2,18 +2,18 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Leaf } from 'lucide-react';
 import { useState } from 'react';
 
+const navLinks = [
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '/about' },
+  { name: 'Features', path: '/features' },
+  { name: 'Privacy Policy', path: '/privacy-policy' },
+  { name: 'Terms', path: '/terms-and-conditions' },
+  { name: 'Contact', path: '/contact' },
+];
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
-
-  const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Features', path: '/features' },
-    { name: 'Privacy Policy', path: '/privacy-policy' },
-    { name: 'Terms', path: '/terms-and-conditions' },
-    { name: 'Contact', path: '/contact' },
-  ];
 
   const isActive = (path) => location.pathname === path;
 
@@ -61,6 +61,7 @@ export default function Header() {
           {/* Mobile menu button */}
           <div className="flex items-center md:hidden">
             <button
+              type="button"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
             >
