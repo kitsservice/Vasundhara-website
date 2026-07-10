@@ -39,6 +39,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li><Link to="/privacy-policy" className="hover:text-primary-400 transition-colors">Privacy Policy</Link></li>
               <li><Link to="/terms-and-conditions" className="hover:text-primary-400 transition-colors">Terms & Conditions</Link></li>
+              <li><Link to="/csae-standards" className="hover:text-primary-400 transition-colors">CSAE Standards</Link></li>
               <li><Link to="/delete-account" className="hover:text-red-400 transition-colors">Account Deletion Request</Link></li>
             </ul>
           </div>
@@ -76,3 +77,4 @@ export default function Footer() {
     </footer>
   );
 }
+

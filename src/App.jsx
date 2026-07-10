@@ -10,6 +10,7 @@ const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
 const TermsAndConditions = lazy(() => import('./pages/TermsAndConditions'));
 const Contact = lazy(() => import('./pages/Contact'));
 const DeleteAccount = lazy(() => import('./pages/DeleteAccount'));
+const CSAEStandards = lazy(() => import('./pages/CSAEStandards'));
 
 function PageLoader() {
   return (
@@ -50,6 +51,7 @@ function App() {
             <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/delete-account" element={<DeleteAccount />} />
+            <Route path="/csae-standards" element={<CSAEStandards />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
@@ -60,3 +62,4 @@ function App() {
 }
 
 export default App;
+
